@@ -30,7 +30,13 @@ el_heights = config['DEFAULT']['EL_HEIGHTS'].split(',')
 el_widths = config['DEFAULT']['EL_WIDTHS'].split(',')
 el_angles = config['DEFAULT']['EL_ANGLES'].split(',')
 
-f,axes = plt.subplots(len(decs),1,sharex=False,facecolor='w')
+if len(decs) == 1:
+	axes = [0]
+	f,axis = plt.subplots(len(decs),1,sharex=False,facecolor='w')	
+	axes[0] = axis
+else:
+	f,axes = plt.subplots(len(decs),1,sharex=False,facecolor='w')
+	
 for i in range (0,len(decs)):
 	print('----'+str(i)+'--------------------------')
 
