@@ -37,6 +37,7 @@ over a given series of TAB tiling patterns (e.g. at different Decs or RAs or ove
 For each tiling pattern you want to make:
 1. Run tilesim.py with the desired parameters.
 2. Fill out the config file to look like example.txt
+
 Then, just run Primary_plotter.py
 
 EXAMPLE:
