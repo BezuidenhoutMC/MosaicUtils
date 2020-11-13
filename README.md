@@ -51,3 +51,13 @@ Creates a DS9 region file with ellipses with desired coordinates & sizes. Useful
 to check that suspected sidelobe detections match up with predicted sidelobe positions.
 Just edit the ras, decs, widths, heights, and pas arrays with the parameters of the ellipeses you want, and run the script. Generates
 a "regionfile.reg" that can be imported into DS9.
+
+
+---
+compile_coordinates.py
+
+Used in a directory with pulse archives and a run_summary.json CA log file compiles beam coordinates + SN values in the right format
+for use with SeeKAT.py
+
+
+---
