@@ -15,8 +15,8 @@ for n in range(0,58):
 			with open(log) as json_file:
 				data = json.load(json_file)
 
-			cmd = "psrstat -q -c '{$on:max-$off:avg}' -j DFTp " + fname
-			#cmd = "psrstat -q -c snr -j DFTp " + fname
+			#cmd = "psrstat -q -c '{$on:max-$off:avg}' -j DFTp " + fname
+			cmd = "psrstat -q -c snr -j DFTp " + fname
 			pipe = Popen(cmd, shell=True, bufsize=1, stdout=PIPE).stdout
 			value =  pipe.readline().strip("\n").strip(" ").strip("snr=")
 			ra = data['beams']["list"][i]["ra_hms"]
