@@ -19,7 +19,7 @@ Creates a quick plot of beam positions with detections coloured in.
 This will produce a file called tilingCoord which has the RAs and Decs of each TAB.
 It will also print out width1 = the height of the TABs in arcseconds, and width2 = TAB width, as well as the TAB orientation.
 
-2. Run detections_plot.py -f {coord file} --w {TAB width} --h {TAB height} --a {TAB angle} --d {beam#} {beam#} {beam#}...
+2. Run python detections_plot.py -f {coord file} --w {TAB width} --h {TAB height} --a {TAB angle} --d {beam#} {beam#} {beam#}...
 
 EXAMPLE:
 If tilesim.py gives width1=62 and width2=42, and there are detections of a source in beams 123,125, and 126, 
