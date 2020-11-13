@@ -61,3 +61,8 @@ for use with SeeKAT.py
 
 
 ---
+gen_tilesim_cmd.py
+
+python gen_tilesim_cmd.py -f run_summary.json
+
+generates the appropriate command for a tilesim simulation based on the parameters in the run_summary.json log file
